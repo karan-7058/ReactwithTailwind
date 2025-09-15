@@ -2,6 +2,7 @@ import { useState } from "react";
 import Header from "./Header";
 import Allcards from "./Allcards";
 import Footer from "./Footer";
+import Passgen from "./Passgen";
 
 function App() {
   const [color, setColor] = useState("black");
@@ -14,8 +15,12 @@ function App() {
       {/* Header */}
       <Header />
 
+      <Passgen />
+
       {/* Cards */}
       <Allcards />
+
+      
 
       {/* Color Changer Bar */}
       <div className="flex flex-wrap justify-center bg-gray-300 px-4 py-2 shadow-lg">
